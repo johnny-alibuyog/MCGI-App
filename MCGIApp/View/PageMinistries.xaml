@@ -1,0 +1,179 @@
+﻿<Page
+    x:Class="MCGIApp.PageMinistries"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Church Ministries" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The following Ministerial groups each perform unique tasks to carry out the mission of the Church of God in service to the Congregation and fellowmen.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Propagation</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            At the time our Lord Jesus Christ was about to ascend to heaven, He delegated the task of preaching God's Word to his apostles on a global scale. In Matthew 28:19-20, Christ said, "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen."
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Fulfilling this commandment is the primary objective of the Members Church of God International. Due to this Bible-based commitment of preaching the words of God, the Church actively uses the pulpit, the press, the airwaves and the cyberspace in revealing God's message unto every nation.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            With Bro. Eli Soriano spearheading the audacious and steadfast campaign, MCGI is persistent in its duty of propagating God's words through the following means:
+                                <LineBreak />- Live Bible Exposition
+                                <LineBreak />- Websites and blog
+                                <LineBreak />- Television
+                                <LineBreak />- Radio
+                                <LineBreak />- Publications
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            From Bible preaching in person to using all possible avenues and technologies, MCGI utilizes its entire God-given resources, talents and skills to make disciples of the Lord Jesus Christ in every corner of the globe.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Workers</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Members Church of God International Workers Ministry is made up of humble servants and ambassadors for the propagation of God's words. It is composed of the Presiding Minister, the Council of Ministers and Church Workers. It is tasked to preach the Gospel of Christ for edification, exhortation, and comfort of the Church. In coordinating centers, Workers administer spiritual services, such as:
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Like all other Church services, the Bible Exposition is free. All are welcome to attend and ask Bro. Eli Soriano any question they may have of the Bible and its Author. And for their indulgence to MCGI's invitation, guests are even served food and drinks.
+                                <LineBreak />- Thanksgiving services
+                                <LineBreak />- Prayer Meetings
+                                <LineBreak />- Worship Services
+                                <LineBreak />- Indoctrination Sessions
+                                <LineBreak />- Bible Studies
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Presiding Minister supervises the entire activity of the Church and implements all policies and projects aimed for the improvement of the Congregation's spiritual well-being. He ensures the proper and rightful execution of the duties and responsibilities of the Ministers and officials of Church ministries and organizations. He also teaches the Ministers and Workers all the doctrines of Christ in the Bible to be taught to the members.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Ministers preach sermons in different places assigned to them by the Presiding Minister. They oversee the spiritual growth and welfare of the members primarily within the area or Church committee delegated to them.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Workers, on the other hand, are assigned to preside in various activities and services done in Church locales under the supervision of the Presiding Minister and the assigned minister. Aside from management functions, Church Workers serve as paragons of Christian living in faith, livelihood, cleanliness and love.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionThree">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Foreign</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Members Church of God, International has gone a long way in propagating the Gospel. Through the leadership of Bro. Eli Soriano and Bro. Daniel Razon, MCGI has started preaching God's words in various countries.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Foreign Ministry paves the way for the teachings of Bro. Eli and Bro. Daniel to be heard globally. Comprised of Church workers capable of speaking foreign languages, the Foreign Ministry supervises Church services (Indoctrination Sessions, Baptisms, Worship Services, Prayer Meetings, and Thanksgiving Gatherings) of brethren based outside the Philippines. The ministry also assists Bro. Eli and Bro. Daniel in conducting their Bible Expositions abroad.
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Foreign Ministry also orients and gives counsel to brethren in the Philippines who intend to go to other countries.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionFour">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Prison</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            With this commitment of serving people from all walks of life in the hope that they would heed God's calling, the Church extends its ministerial efforts to the prison cells.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            It is the mission of the Members Church of God International to spread the Good News in the Bible without discrimination. With this commitment of serving people from all walks of life in the hope that they would heed God's calling, the Church extends its ministerial efforts to the prison cells. This is the task designated to the Prison Ministry.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Prison Ministry aims to spread the Gospel to the correctional and penitentiary institutions. The challenges and risks abound in carrying out ministerial duties to our fellowmen feared and despised by society.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Despite these hurdles, with God's help and guidance, through the teachings of Bro. Eli and Bro. Daniel, the Prison Ministry is able to bring many former criminals out of their crooked ways. Today, these people have been converted from being menaces to being reformed members of the society and God's humble servants.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Aside from providing for the spiritual needs of the prisoners, the Prison Ministry also provides legal and medical assistance.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionFive">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Music</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            "Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord;" (Ephesians 5:19).
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            A key doctrine that the Members Church of God, International practices is the singing of hymns and songs of praises to God Almighty. It is through music that the Church offers thanksgiving and praises to the Lord, as one of the primary obligations of the members in the Church. The Music Ministry is delegated to provide the musical requirements in all Church gatherings, special events and concerts.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Music Ministry is composed of musicians, composers and choir groups from local to national level. With direct supervision from Bro. Daniel Razon and help from the Music Ministry Core (MMC), the Music Ministry leads the congregational singing in Church services and special events, composes hymns and musical pieces, facilitates trainings and seminars for the improvement of the choirs and musicians, and organizes musical events, such as concerts, musical competitions, among others.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

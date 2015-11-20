@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="MCGIApp.HslPlayerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:pf="using:Microsoft.PlayerFramework"
+    xmlns:smmp="using:SM.Media.MediaPlayer"
+    DataContext="{Binding DefaultViewModel.Link, RelativeSource={RelativeSource Self}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <pf:MediaPlayer Name="player"
+                        Source="{Binding URL}"
+                        AudioCategory="BackgroundCapableMedia"
+                        IsAudioSelectionVisible="True">
+        <pf:MediaPlayer.Plugins>
+            <smmp:StreamingMediaPlugin />
+        </pf:MediaPlayer.Plugins>
+    </pf:MediaPlayer>
+</Page>

@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="MCGIApp.PagePeople"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="People" />
+        </StackPanel>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Foreground="{ThemeResource ApplicationForegroundColor}" Margin="20,20,20,0">
+            <StackPanel>
+                <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Members Church of God, International is a congregation of people who believe in the supremacy of God and the deity of the Lord Jesus Christ. This group recognizes the Bible as a divinely-inspired book, and believes that its miraculous survival-despite attempts to eradicate it-is the work of God. Members of the Church also believe that the Presiding Minister, Bro. Eli Soriano, is God-sent due to his exceptional understanding of the Scriptures.
+                </TextBlock>
+                <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The bona fide members of the Church are those who have completed the month-long indoctrination sessions and have wholeheartedly accepted the faith through baptism. Baptism is a sign of subjection to the Church's principles and teachings inscribed in the Bible (Acts 8:26-38). An official member is called Christian (Acts 11:26) and adheres religiously to the doctrines of Jesus Christ and the Apostles, the head and the pillars of the Church, respectively. A person who willfully vows himself to this Organization is expected to carry out the duties and obligations of a Christian faithful, in all propriety of manner and gesture (I Timothy 3:15).
+                </TextBlock>
+                <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Prior to their affiliation, most members of MCGI were associated with diverse religious denominations. Some have heard the teachings of the Church through streaming media like television, radio, and the Internet. Some have heard them through live gatherings like Bible expositions, Bible studies and debates. Interestingly, many of the members describe themselves as 'hard critics' of the Church before they accepted the truth and discovered the sincerity of its preacher. Today, these self-professed former critics actively serve the cause of the Church.
+                </TextBlock>
+                <TextBlock Style="{ThemeResource ItemPageContent}">
+                            "MCGI observes and strictly abides by God's commandments (Ecclesiastes 12:13)". Its goal is to spread the unadulterated words of the Lord in the Bible (Matthew 28:19-20) and to reach out to people who seek spiritual enlightenment. With God's help, as home of true Christians, MCGI brings the good news to those who are genuinely interested in learning God's wisdom in the Scriptures.
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

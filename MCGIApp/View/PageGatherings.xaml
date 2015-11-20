@@ -1,0 +1,201 @@
+﻿<Page x:Name="pageRoot"
+    x:Class="MCGIApp.PageGatherings"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:data="using:MCGIApp.Data"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    mc:Ignorable="d"
+    DataContext="{Binding DefaultViewModel.Section, RelativeSource={RelativeSource Self}}">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Gatherings" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+            
+            <HubSection Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">PLACES OF WORSHIP</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The ADD Convention Center</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Located at Apalit, Pampanga, the Ang Dating Daan Convention Center is the Philippine headquarters of MCGI.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Home of major Church events like the quarterly International Thanksgiving (or the Pasalamat ng Katawan) where it accommodates tens of thousands of people. Regular Church services also take place here. Weekly, this is where believers get baptized and congregants give thanks to God.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The ADD Convention Center is also the venue where Bible Expositions and other international events like the bi-annual A Song of Praise (ASOP) Music Festival are held. Occasionally, it hosts benefit concerts, Church conventions, and Ang Dating Daan (The Old Path) anniversaries.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Chapel</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Chapel at the ADD Compound in Pampanga is a multi-purpose venue for Church services - from the 24/7 praise-singing and community prayer to Mass Indoctrination sessions.
+                            </TextBlock>
+                            <TextBlock  Style="{ThemeResource ItemPageContent}">
+                            During International Thanksgivings, the Chapel also serves as an extension of the Convention in welcoming its countless attendees.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Locale and Coordinating Center</TextBlock>
+                            <TextBlock  Style="{ThemeResource ItemPageContent}">
+                            The Locale in the communities outside of Apalit, Pampanga, is where brethren meet weekly to attend different Church services, as well as host Indoctrination sessions.
+                            </TextBlock>
+                            <TextBlock  Style="{ThemeResource ItemPageContent}">
+                            Though some also have satellite dishes, it is the Coordinating Centers that are equipped for receiving satellite and Internet feeds for Worldwide Bible Expositions and special religious gatherings. Coordinating Centers are also ready to receive inquiries about schedules of Church services and Mass Indoctrinations in their area.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">WORSHIP SERVICE AND PRAYER MEETINGS</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Worship Service</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            As with any Church gathering, the Worship Service starts with congregational singing led by a choir. Observing St. Paul's admonition to first-century Christians in 1 Corinthians 14:26, this serves as a time to reflect and ready one's self for prayer.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Prayers are led by a Church minister or worker. While brethren kneel in prayer (Psalms 92:6; Acts 20:36; Matthew 26:39), guests are free to stay in their seats.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            After the prayer is a Bible-reading segment (Deuteronomy 17:19), where a chapter or two of the Bible is read. Attendees listen to a recorded audio of the verses that are being read as the verses are displayed on television screens. Added to the previous service obtaining in 2011, MCGI started with the Book of Genesis to initiate bible-reading sessions.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Members then listen to a topic prepared and delivered by Bro. Eli Soriano and Bro. Daniel Razon respectively. The topic is delivered in portions and is continued in the following Prayer Meeting.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The worship service is also the time when members give their financial contribution to the Church as written in 1 Corinthians 16:1-2.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Prayer Meeting</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            As the name implies, Prayer Meeting was originally a time for members to meet midweek to pray. The time came however when brethren requested that they hear a biblical topic as well. Since then, the Prayer Meeting became similar in format to the Worship Service, albeit, without the monetary contribution. This service is based on Hebrews 10:25-26.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Prayer Meeting is done on Wednesdays and Thursdays at different schedules in the morning, afternoon, and evening.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionThree">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">THANKSGIVING</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Thanksgiving - Live</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            For a whole week's worth of love and care, members gather to give thanks to God to proclaim His works before His nation and sing to Him praises.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Thanksgiving falls on a Saturday in the Philippines, where brethren flock to the ADD Convention Center to witness 'celebrants' sing on stage and hear a biblical topic prepared and delivered by MCGI leaders.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Celebrants</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The 'celebrants' are brethren who have set themselves to give thanks on a date of their choice.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            As King David did in Old Israel, celebrants express their reasons for giving thanks to God before the congregation (Psalms 116:16-17). Unlike David however, they do so via recorded videos that are played on big LED screens on stage.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Celebrants then sing songs of praise on stage as stated in Psalms 92:1; 50:23. While those from Metro Manila and provinces near Pampanga go to the Convention Center to offer their songs on stage, those from remote areas in the country to as far as South America express their greetings and gratitude in their own areas.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            On the day of their Thanksgiving, they make a video call to the Philippines to state their reasons for giving thanks. Then, a pre-recorded video of their presentation is played on the screen for all to view and sing-along to.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Consultation</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            While others take breaks for physical nourishment and relaxation, MCGI leaders take time to help solve, with God's help and mercy, members' spiritual concerns through the consultation period.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            From doubts on biblical verses to personal struggles, Bro. Eli and Bro. Daniel provide biblically-based answers to members who will come forward to ask questions. By reading the verses of God's words, members receive peace and comfort.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Not all problems however are spiritual, so some take this segment of the Thanksgiving program to seek help with their physical ailments.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Doctors are on standby during such moments, when brethren consult what best to do with their health. On the other hand, some ask Bro. Eli and Bro. Daniel for financial and legal assistance that can help them from starting a small means of livelihood to having a temporary place to stay for being evicted from their house.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            While the consultation during Thanksgiving is dedicated to brethren, guests occasionally ask Bro. Eli questions about the Church or about the biblical topic.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Biblical Topic</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            For each Thanksgiving, MCGI leaders prepare a scriptural topic to teach the brethren. Topics range from seemingly conflicting verses to misconceptions about biblical personages to mysteries spoken by prophets from Genesis to Revelation to cite a few.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The first part is delivered by Bro. Daniel Razon and the concluding part by Bro. Eli Soriano via live video streaming.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The regular Thanksgiving falls on a Saturday in the Philippines. Brethren at MCGI Coordinating Centers in the country and abroad join in the festivities via the Church's satellite and Internet facilities.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Thanksgiving - Viewing</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In consideration of brethren who have work during Thanksgiving day, the leadership of MCGI set up the Thanksgiving Viewing. Brethren can attend at a locale near them to view the recorded proceedings, including the singing and consultation segments of the program.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The service is available the following day of the live Thanksgiving, but is also offered on weekdays at different locales.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">International Thanksgiving</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In contrast to weekly Thanksgivings, the quarterly three-day celebration is time for the whole Church to offer praises to God for His love and guidance. In the vernacular, it is called Pasalamat ng Katawan (Thanksgiving of the Body) (Colossians 1:18).
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Congregants from nearby provinces in Luzon region and the National Capital Region flock to the ADD Convention Center during the three-day event. Even more, the MCGI headquarters get filled to the brim as members from the Visayas and Mindanao Islands travel by boat and by plane to reach it.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Aside from the chance to meet brethren from afar face-to-face, the International Thanksgiving also allows more time for studying spiritual topics and consultations with MCGI leaders.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            International Thanksgiving schedules are usually announced two months in advance so members can prepare and file their leaves from work. Like in other Church gatherings, guests are welcome to attend.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            MCGI does not offer any religious service in return for any financial payment, as this was not a practice of the Lord Jesus Christ before (3 John 1:7).
+                            </TextBlock>
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

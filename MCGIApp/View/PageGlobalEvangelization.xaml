@@ -1,0 +1,448 @@
+﻿<Page
+    x:Class="MCGIApp.PageGlobalEvangelization"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Global Evangelization" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+
+            <HubSection Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Radio</TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            After preaching nightly in the towns of Pampanga, Philippines for more than a decade during the 1970s, Bro. Eli Soriano realized that it would take him many more years just to reach a large part of the country. Back then, radio was a popular medium that can offer the means to carry the voice of Bro. Eli to a wider mileage at a cost cheaper than television.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            So in the last quarter of 1980, the Ang Dating Daan radio program was introduced and aired on DWWA 1260 Khz. Produced with a shoe-string budget, the thirty-minute program had allowed Bro. Eli to discuss short bible study lessons.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Thirty years later, Ang Dating Daan would not only be heard through radio, but seen on television, at MCGI's video streaming websites and via seven satellite carriers transmitting the program and its different translations across the globe.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            However, Ang Dating Daan still continues to be heard over radio, especially for those areas in the Philippines beyond the reach of televisions and computers.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Radyo Natin</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            MCGI takes advantage of Radyo Natin's 100 stations that can reach more remote locations in the Philippines. Radyo Natin is the biggest radio network in the Philippines. It is found in the FM band where it plays music in the morning. Come 8:30 every evening however, Ang Dating Daan airs until 10 p.m.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">UNTV Radyo La Verdad 1350z</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Ang Dating Daan, the longest-running religious program in the country officially debuted on October 9, 2011 at UNTV Radyo La Verdad 1350 Khz, formerly DZHQ 1350 Khz. Radyo La Verdad or 'Truth Radio' serves as the AM home of UNTV, the Philippines' public service network, where ADD airs daily.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            To view the schedule of the Ang Dating Daan program on radio, please see here.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Television</TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            A radio program since 1980, Ang Dating Daan (The Old Path) started television broadcast in 1984 to keep pace with its growing popularity. The program debuted on IBC 13 with a one-hour time slot. At that time, ADD managed with a production crew of just three people.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bro. Daniel Razon, who was still in high school at the time, took on the director's chair while Sis. Luz Cruz handled set design, research, and helped Bro. Daniel during the editing process. She also did the makeup for Ang Dating Daan's host: Bro. Eli Soriano.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Over the years, Ang Dating Daan's unique format, where Bro. Eli tackles a wide range of biblical topics, including life, religion, science, and history drew more and more viewership. What stands out today as the program's trademark and main attraction is the question-and-answer segment called Itanong Mo Kay Soriano. During this symposium-like segment, people can ask live questions of faith and hear the Bible's answers from Bro. Eli.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Thanks to television, Ang Dating Daan would become familiar to the masses, and the masses familiar to the program and its host, Bro. Eli. On whichever network ADD went - RJTV 29, PTV 4, SBN 21 - the people followed. ADD's set would be overflowing with people for the chance to ask Bro. Eli live on television.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Now, one of the longest-running religious programs in the country continues to serve people through UNTV, the Philippines' Public Service channel. With Bro. Eli preaching abroad, it is not only Filipinos who can be seen on the ADD program lining up for questions, but people of various colors and backgrounds.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Today, The Old Path is broadcast in more than 70 countries in five languages. MCGI leaders are steadfast in exerting efforts for the program to reach even more people, not just on television, but via the Internet and satellite.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            To view the schedule of Ang Dating Daan (a.k.a. The Old Path, El Camino Antiguo, O Caminho Antigo) by region, please click here.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+            
+            <HubSection Name="ItemPageSectionThree">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Internet</TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In this Information Age, connecting with the rest of the world is just a few hand gestures or voice commands away. Since the year of the infamous Y2K virus, the number of Internet users have quintupled from 360 million in 2000. The World Wide Web spawned more than two billion users in just over a decade, according to RoyalPingdom.com.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Seeing its huge potential to reach countless people across the planet, MCGI launched its first Church website in 1999 and began offering its 24/7 video streaming capabilities the following year. Two years later, AngDatingDaan.org won both the Most Popular Website and People's Choice Awards in the Philippine Web Awards.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In the years that followed, MCGI then developed more websites to bring to its many online audiences insightful content, relevant features and more interacivity. As its websites reaped similar awards in the following years, the leadership of MCGI notes that the intention in creating websites however remains not to garner laurels, but to be humble online instruments in spreading God's words to all.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Explore the websites developed and produced for our various constituents globally to learn more about the Bible with God's help.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">www.AngDatingDaan.org</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Serving Filipinos worldwide with God's words in Tagalog, this website gives users an accessible platform to view Q and A videos, relive debates, and more about the longest-running religious program in the Philippines, Ang Dating Daan.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">www.TheOldPath.tv</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Watch Ask Bro. Eli, Truth in Focus, The Old Path and Q and A videos in this website. As the online home of MCGI's English programs, TheOldPath.TV also brings relevant information to users interested to learn about the radio and television programming and the show's satellite information. Users may opt to subscribe to the newsletter in order to receive event and other updates from the program.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">www.EliSoriano.com</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Meet the Presiding Minister to MCGI through his official website on the World Wide Web. Know more about the life, works, and achievements of this International Evangelist and host of The Old Path.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">www.OCaminhoAntigo.tv</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In response to the growing ministry in South America, MCGI launched this live-streaming and video archive online portal in Portuguese, complementing its satellite and cable television broadcasts in the continent.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">ElCaminoAntiguo.com</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bienvenido! MCGI's site for Spanish-speaking countries comes packed with Q and A video archives as well as episodes of El Camino Antiguo.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionFour">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Social Media</TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Facebook</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            To seize the massive reach of this popular social networking channel, MCGI has launched these fan pages to provide users with relevant updates about MCGI, its leaders, and its programs:
+                            <LineBreak />- Facebook.com/BroEliseoSoriano
+                            <LineBreak />- Facebook.com/KuyaDanielRazon
+                            <LineBreak />- Facebook.com/AngDatingDaanTV
+                            <LineBreak />- Facebook.com/TheOldPath
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Twitter</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            <Bold>@BroEliSoriano</Bold><LineBreak />
+                            Follow Bro. Eli for answers to questions about faith, not to mention, scripturally-inspired tweets.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            <Bold>@AngDatingDaanTV, @TheOldPathTV</Bold><LineBreak />
+                            Besides giving the freshest Church news and event announcements, these Twitter accounts make up-to-the-minute tweets in Filipino and English respectively, during Worldwide Bible Expositions.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionFive">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Satellite</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Satellite technology has offered to humanity the gift of worldwide communication. Aside its functions supporting global positioning, weather forecasting, and others, it is most useful in television and radio broadcasting, where news is delivered from one point of the globe to another. This technology has proven to be an effective means in delivering information regardless of distance and difference in time, therefore Members Church of God International leaders, Bro.Eli and Bro.Daniel, decided to put it to good use.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Subsequent to being based overseas, Bro. Eli used to travel from one city or state to another, to preach the unadulterated doctrines of Christ to other nationalities. But after realizing that this has taken a lot of his time, the International Evangelist along with Bro Daniel realized they had to think of a measure that will both be time-saving and efficient. Satellite broadcasting was the best option.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Knowing there are people who had been in constant search for biblical truths, Bro. Eli was encouraged to take his chances in spite of the fact that the cost of leasing this technology is expensive. Bro. Daniel Razon, the Vice Presiding Minister, and incidentally a Mass Communications Specialist shored up all the support he could muster for Bro. Eli.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Starting with NSS 806 covering North, Central and South of the Americas, Europe and North Africa, the MCGI leaders had braved to test the waters. After receiving a decent number of viewership, Bro.Eli and Bro.Daniel decided to expand The Old Path's propagation reach through several other satellites that will increase the reach of the global propagation efforts of the Church of God.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            As MCGI's satellite broadcast started to reach more nations around the world, it became inevitable for The Old Path television program that started in the Philippines to be replicated in non-English formats, including El Camino Antiguo for Spanish-speaking people, and the O Caminho Antigo program for the Portuguese-speaking populace.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionSix">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">List of Satellites</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">
+                            SATELLITE - NSS 806
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">                            
+                            - NORTH AMERICA<LineBreak />
+                            - SOUTH AMERICA<LineBreak />
+                            - EUROPE<LineBreak />
+                            - NORTH AFRICA
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">
+                            SATELLITE - GALAXY 19
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">       
+                            NORTH AMERICA<LineBreak />
+                            - USA<LineBreak />
+                            - Canada<LineBreak />
+                            - Mexico<LineBreak />
+                            - Saint Pierre and Miquelon Greenland
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">       
+                            CENTRAL AMERICA<LineBreak />
+                            - Guatemala<LineBreak />
+                            - Belize, Costa Rica<LineBreak />
+                            - El Salvador Honduras<LineBreak />
+                            - Nicaragua Panama<LineBreak />
+                            - Caribbean<LineBreak />
+                            - Antigua &amp; Barbuda<LineBreak />
+                            - Cuba Bahamas<LineBreak />
+                            - Barbados<LineBreak />
+                            - Dominican Republic<LineBreak />
+                            - Dominica<LineBreak />
+                            - Grenada<LineBreak />
+                            - Haiti<LineBreak />
+                            - Saint Kitts &amp; Nevis Saint Lucia<LineBreak />
+                            - Jamaica<LineBreak />
+                            - Saint Vincent &amp; The Grenadines<LineBreak />
+                            - Aruba<LineBreak />
+                            - Trinidad<LineBreak />
+                            - Tobago, Anguilla<LineBreak />
+                            - Bermuda Bonaire<LineBreak />
+                            - Martinique Monsterrat<LineBreak />
+                            - Saba<LineBreak />
+                            - Navassa Island<LineBreak />
+                            - Puerto Rico<LineBreak />
+                            - British Virgin Islands<LineBreak />
+                            - Guadeloupe<LineBreak />
+                            - Curacao<LineBreak />
+                            - Saints Martin<LineBreak />
+                            - Cayman Islands<LineBreak />
+                            - Saint Eustatius Turks &amp; Caicos Islands<LineBreak />
+                            - Virgin Islands<LineBreak />
+                            - Saint Bathelemy<LineBreak />
+                            - Sin Maarten<LineBreak />
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">
+                            SATELLITE - HOTBIRD 6/8/9
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">       
+                            NORTH AMERICA<LineBreak />
+                            - Morocco<LineBreak />
+                            - Algeria<LineBreak />
+                            - Western Sahara<LineBreak />
+                            - Tunisia<LineBreak />
+                            - Libya<LineBreak />
+                            - Egypt<LineBreak />
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">       
+                            WESTERN ASIA<LineBreak />
+                            - Israel<LineBreak />
+                            - Lebanon<LineBreak />
+                            - Syria<LineBreak />
+                            - Jordan<LineBreak />
+                            - Turkey<LineBreak />
+                            - Iraq<LineBreak />
+                            - Saudi Arabia<LineBreak />
+                            - U.A.E.<LineBreak />
+                            - Bahrain<LineBreak />
+                            - Qatar<LineBreak />
+                            - Armenia<LineBreak />
+                            - Azerbaijan<LineBreak />
+                            - Georgia<LineBreak />
+                            - Kuwait<LineBreak />
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">       
+                            CENTRAL ASIA<LineBreak />
+                            SOUTH ASIA<LineBreak />
+                            EUROPE<LineBreak />
+                            WESTERN RUSSIA<LineBreak />
+                            NORTHWESTERN CHINA<LineBreak />
+                            </TextBlock>
+                            
+                            
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">
+                            SATELLITE - THAICOM 5
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">                            
+                            - EUROPE<LineBreak />
+                            - AUSTRALIA<LineBreak />
+                            - AFRICA<LineBreak />
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">
+                            SATELLITE - STARONE C2
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            SOUTH AMERICA<LineBreak />
+                            - Argentina<LineBreak />
+                            - Bolivia<LineBreak />
+                            - Brazil<LineBreak />
+                            - Chile<LineBreak />
+                            - Colombia<LineBreak />
+                            - Ecuador<LineBreak />
+                            - Guyana<LineBreak />
+                            - Paraguay<LineBreak />
+                            - Peru<LineBreak />
+                            - Suriname<LineBreak />
+                            - Uruguay<LineBreak />
+                            - Venezuela &amp; The Territories of Falkland Islands<LineBreak />
+                            - French Guiana<LineBreak />
+                            - South Georgia<LineBreak />
+                            - South Sandwich Islands<LineBreak />
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">
+                            WITH NATIONWIDE BROADCAST IN THE FOLLOWING COUNTRIES
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            ECUADOR<LineBreak />
+                            - CHANNEL: GAMA TV - ECUADOR (started March 21, 2012)<LineBreak />
+                            - TODOS LOS DIAS<LineBreak />
+                            - 04H30 - 05H30<LineBreak />
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            ARGENTINA<LineBreak />
+                            - CHANNEL: AMERICA 2 TV (started January 15, 2011)
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            BOLIVIA<LineBreak />
+                            - CHANNEL: UNITEL(started March 1, 2011)<LineBreak />
+                            -  LOS DIAS<LineBreak />
+                            - 03H00-05H10<LineBreak />
+                            - CHANNEL: TV UNIVERSIDAD CANAL 11<LineBreak />
+                            - TODOS LOS DIAS<LineBreak />
+                            - 06H00 - 07H00<LineBreak />
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            PERU<LineBreak />
+                            - CHANNEL: FREQUENCIA LATINA(started May 16, 2011)<LineBreak />
+                            - LUNES-VIERNES<LineBreak />
+                            - 04H00 - 05H00<LineBreak />
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            URUGUAY<LineBreak />
+                            - CHANNEL: TELEDOCE (started August 1, 2010)<LineBreak />
+                            - LUNES-VIERNES<LineBreak />
+                            - 06H00-06H55<LineBreak />
+                            - SABADO Y DOMINGO<LineBreak />
+                            - 07H00-08H00<LineBreak />
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            EUA, CANADA, AUSTRALIA, NUEVA ZELANDA<LineBreak />
+                            - CHANNEL: LATINO AMERICA TELEVISION (started August 1, 2010)
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            BRAZIL<LineBreak />
+                            - CHANNEL: CANAL CNT<LineBreak />
+                            - MONDAY-FRIDAY 10:30AM-11:00AM
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            To date, seven satellites are carrying The Old Path TV program all over the world, and will continue to expand to serve other regions.
+                            </TextBlock>
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionSeven">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Print</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Gutenberg Bible of 1456 remains to this day the rarest of rare books with a single page fetching $25,000, according to experts in an article on MSNBC.com. Knowing however that the value of bringing God's words to all is beyond any collector's appraisal, MCGI leaders also use print to preach.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The following publications aim to help spread the words of Christ:
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            - TOP magazine features scriptural topics, Church affairs, and a series of answered questions of faith from Bro. Eli's Bible Expositions, and selected blog articles. The magazine started in 2004 and is distributed for free.
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            - From technology to society, to education and history, this magazine publishes articles with a Christian outlook on the different facets of life. It also compiles Church news to keep readers abreast with MCGI activities and public services. Since the magazine is sold, it contains no biblical verse that the words of God may not be used in merchandise (2 Corinthians 2:17).
+                            </TextBlock>
+                            
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            - For those with no access to the Internet comes this printed version of Bro. Eli's WordPress blog, Esoriano.wordpress.com. The blog won Mashable's Most Educational to Follow Award in 2009. Like the TOP magazine, it is distributed for free.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            - While unfortunate events happen daily, Magandang Balita or "Good News" newspaper helps bring hope to the nation by reporting achievements, developments, and breakthroughs in different fields. Above all, it aids in sending God's good news to all through a column of Bro. Eli's preaching. Written mostly in Filipino, the tabloid is given for free.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Among all these however, the best publication that MCGI and its leaders give their best efforts to distribute for free is the Bible. In 2004 alone, Bro. Eli purchased more than PHP 1M worth of bibles. The Philippine Bible Society awarded the preacher a Certificate of Appreciation on March 30, 2005 for being "a regular donor and major distribution partner."
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

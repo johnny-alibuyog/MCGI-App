@@ -1,0 +1,158 @@
+﻿<Page
+    x:Class="MCGIApp.PageHistory"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Church History" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+
+            <HubSection Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The worldwide religious organization that is Members Church of God International (MGCI) started with just a small group of Filipino believers in Northern Philippines. It is more known locally as Ang Dating Daan (The Old Path).
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In 1980, the Philippines' organization registry officially recognized the group as Mga Kaanib Iglesia ng Dios kay Kristo Hesus Haligi at Saligan ng Katotohanan sa Bansang Pilipinas (Members Church of God in Christ Jesus the Pillar and Ground of the Truth in the Philippines) with Bro. Eliseo Soriano as its Presiding Minister.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            From less than a hundred believers, Church members and locales grew steadily as the outcome of the group's zealous efforts in evangelization. Bro. Eli would move from one town to another to conduct Bible studies, usually three towns every night. From Pampanga area, the group's main seat, he reached out to the provinces of Bulacan, Rizal, Nueva Ecija, Bataan, and Metro Manila to do his missionary works. However, Bro. Eli calculated that his lifetime is not enough to reach Filipinos in distant regions even with his nightly town-to-town preaching, so he decided to go on air.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Birth of Ang Dating Daan</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bro. Eli discerned that he can reach many people at a time using the broadcast media. In the last quarter of 1980, the Church launched the radio program Ang Dating Daan, hosted by Bro. Eli. Through the local radio station DWWA 1260 Khz, ADD was heard in many parts of the Philippine Archipelago. The program became popular more than any other religious program in the country because of its live question and answer portion. First of its kind, the uncensored Q and A format became the trademark of Ang Dating Daan.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In 1984, the program kicked off its national television appearance through Intercontinental Broadcasting Channel 13. Over the years, it has gained loyalty from its viewers that when it later moved from station to station for some concerns, people followed it. Ang Dating Daan as a program in radio made its stint in RJTV 29, PTV 4, SBN 21, and now UNTV. Ang Dating Daan or The Old Path was derived from Jeremiah 6:16.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionThree">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Rise of Bible Expositions</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In 1993, the Church introduced what is now the popular Bible Exposition. Bro. Daniel Razon, an Officer-in-Charge then, now the Vice-Presiding Minister of the Church, proposed and organized a social event where guests could dine together and ask Bro. Eli matters concerning faith and spirituality. The event, done off-camera, was a success that it paved the way for Bible Expositions in larger venues. The first local Bible Exposition was held in Roosevelt, Manila also in 1993. It was televised in the Philippine provinces through the Ang Dating Daan program. Bible Expositions then became a regular segment of the program that attracted more viewers.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionFour">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Southern Philippines Hears the Good News</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Local radio stations 100 Radyo Natin and DZRH acted a major role in the Church's missionary works in the Visayas and Mindanao regions. Through these relay stations, the Ang Dating Daan reached the residents of the Southern Philippines which resulted in the establishment of locales in the area.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionFive">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Need for Helpers</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            With the abounding works of evangelization at hand, the members saw the need of someone who will help Bro. Eli administer the Church. In 1998, the Congregation elected Bro. Daniel Razon as Vice-Presiding Minister. Ministers-in-Charge and Officers-in-Charge, now known as Katulong ng Pangangasiwa (Assistants to the Administration) and Tagapangasiwang Pampook, were also chosen to oversee the members and locales in various regions of the country.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionSix">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Crossing boundaries</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In 1999, the Church crossed the Philippine boundaries and took advantage of the power of modern technology in mass communication. Through AngDatingDaan.org, the first webcast and live video streaming of Ang Dating Daan program was seen in the World Wide Web. On July 13, 2002, a live video-streamed Bible Exposition held in Singapore took its first foreign appearance. With the help of members living abroad, locales were established in many countries in Asia, Australia, and Europe.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            On October 7, 2004, the Church explored the possibilities of using the satellite and introduced the English version of Ang Dating Daan, The Old Path (TOP). It was broadcast in the United States and Canada through the services of Globecast, a direct-to-home provider of free-to-air television via satellite. Subsequently, locales were established in North America.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The zealous effort of the Church to propagate the Gospel won the hearts of many people. As the Church became even more popular, envy and efforts to disband the group heightened. Death threats especially for Bro. Eli came left and right, eventually pushing him to leave the Philippines in the last quarter of 2005. The Congregation, though, believed that his exit was God's will as it paved the way for more non-Filipinos to hear the Good News. Evangelization works abroad grew intensely since then. As Bro. Eli continued his missionary works in other countries, Bro. Daniel helped him to establish the locales in the United States.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            On January 7, 2006, the first live Bible Exposition in the United States was held in Los Angeles, California. Later, in 2008, Bible Expositions were conducted in the continent of Oceania bringing forth the first locale in Papua New Guinea, the Locale of Madang. In the same year, locales were established in Ghana, West Africa as a result of a series of Bible studies in Africa. The early months of 2009 saw the Church introduced in Latin America. At first baptism, 263 South Americans were converted making it the first locale in the continent.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionSeven">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">MCGI Today</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Constant mass indoctrinations and mass baptisms list more members and locales around the globe. The Congregation is a witness to the rapid growth of non-Filipino members since the time Bro. Eli left the country, and is counting more as he stays longer abroad. The change of the group's name to Members Church of God International in 2005 shows its utmost relevance to what is now a global religious entity. In the same way, the relocation of MCGI headquarters from the "Old Central" to ADD Convention Center in Apalit, Pampanga describes the huge number of members in the province alone. The Convention Center is double the size of a 20,000-seater Araneta Coliseum, the biggest indoor facility in Southeast Asia. This gives a clear view of the sheer size of the whole Congregation.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The group that started from a small number of Filipino believers in Northern Philippines is now the same huge organization that caters daily free medical missions, free bus and train rides, and free college education. MCGI also supports several centers that house the homeless, the aged, and the special individuals. In its effort to save lives, MCGI is now the number one blood donor in the Philippines acknowledged by the Philippine National Red Cross.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

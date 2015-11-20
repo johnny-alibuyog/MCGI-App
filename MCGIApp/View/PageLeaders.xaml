@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="MCGIApp.PageLeaders"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Leaders" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Bro. Eli Soriano</TextBlock>
+                            <Image Source="../Assets/Icons/img-broeli.jpg" Height="250" Width="150"  />
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bro. Eliseo Fernando Soriano is the Presiding Minister of the Members Church of God International. Currently overseas, he continues his campaign for spiritual enlightenment all over the globe, which started in the Philippines, his home country. Brother Soriano also holds a record of 24/7 worldwide broadcast programs with sprinting Bible expositions from one global point to another. He is the host of the phenomenal TV and Web program, the 'Ang Dating Daan' (The Old Path), a unique, interactive and unscripted format of inquiry directly answered by the Bible.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bro. Eli Soriano's media exposure has its roots in his personal encounters with people in the towns and outskirts of Northern Philippines where he first preached the Bible. His actual radio evangelism began in 1980 as a Bible broadcaster in a local radio station through his program 'Ang Dating Daan' (The Old Path). The program's exclusive set-up caught many avid listeners and enthusiasts for a sensible thirty-minute discussion of the Bible. His notable reputation in the broadcasting industry and the loyal audience that followed him opened more portals of opportunities for longer airtime and better exposure in more and bigger networks in the capital state and in the provincial regions.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Beginning 1984, he took a bolder pace in gospel propagation when his program aired over television networks like the Intercontinental Broadcasting Corporation Station (IBC) 13, Ramon Jacinto Television (RJTV) 29, People's Television Network (PTV) 4, Southern Broadcasting Network (SBN) 21, and his current carrier station, UNTV 37.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Aside from the usual media propagation systems available, Bro. Soriano capitalizes other types of heard, read, and viewed multimedia devices such as the Internet, mobile phones, mp3's, and Ipods. The usual print medium is also made available in tabloids and magazines.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            His audiences, both local and foreign, attest to his frank, undisputable, and notably sensible responses to questions on spiritual and practical matters.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            With the continuous expansion of evangelization work, he extends foreign ministerial missions by conducting serial Scripture expositions even to remote points. The extent of the work has widened and is reaching as far as the island nations where populations are searching for interactive and insightful Bible scholarship.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bro. Soriano's hectic time-frame does not limit his task to reach out to populations in need of public service. When still based in the Philippines, he spearheaded many feeding programs for the young in depressed areas and led the drive for civic assistance to the elderly and the poor. Through his charitable institutions, many people have been benefited with free and continuous social service. His charity works include orphanages, home for the aged, infirmary, and school. The social service activities like medical missions, feeding programs, legal services, job fairs, free rides, among others, have served well the principles in the Bible that he is preaching.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="WelcomeSection" Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">Bro. Daniel S. Razon</TextBlock>
+                            <Image Source="../Assets/Icons/img-brodaniel.jpg" Height="250" Width="150"  />
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Bro. Daniel S. Razon, the Vice-Presiding Minister to the Members Church of God International, was born in Bulacan on October 11, 1967 to Bro. Dan and Sis. Beth Razon. Bro. Daniel grew up with the Bible as his guide mainly because of his uncle, Bro. Eli Soriano, who treated the Razon children as his own. When he was three, Bro. Daniel would recite poems in Thanksgiving services held by the Church. And when he was 17 years old, Bro. Daniel got baptized in the Church of God on November 28, 1983.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            From his youth, Bro. Daniel has always sought and heeded the advice of Bro. Eli. For instance, when he was about to enter college, Bro. Daniel dropped his dreams of becoming a medical doctor and pursued Mass Communications instead - an act inspired by Bro. Eli that would later prove significant in Ang Dating Daan or The Old Path's broadcast history.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Determined to be a hard-worker early on, Bro. Daniel worked while in college, despite the fact that his family could well support his studies. After four rough years, he reaped the fruit of his labor with a bachelor's degree in Mass Communications at the Centro Escolar University in 1987.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Although he was reluctant at first, and Bro. Eli didn't even ask him to be one, Bro. Daniel soon became a worker in the Church of God. Afew years following, he became the Officer-In-Charge of the Metro Manila Division of the Church. It was during this time that Bro. Daniel conceptualized many of the Church's existing organizations for the brethren's benefit. He is also the brains behind the Bible Expositions of Bro. Eli that would break attendance records of the biggest closed venues in the country, including The Araneta Coliseum.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The time soon came that a Vice-Presiding Minister of the church had to be appointed. Although Bro. Eli had the doctrinal right to appoint Bro. Daniel, he let the members decide from among their nominated Officers-in-Charge, or the ones who were tasked to supervise brethren according to geographical regions (now called, "Helpers of the Ministry"). However, the Congregation's vote was unanimous. Thus in 1998, he was proclaimed the Vice-Presiding Minister of the Members Church of God International.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Having been biblically guided by Bro. Eli, Bro. Daniel has become the Mr. Public Service that many have come to know. And, indeed, many of the underprivileged are thankful that a man on television has understood the real meaning of service to the public.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+            
+            
+        </Hub>
+    </Grid>
+</Page>

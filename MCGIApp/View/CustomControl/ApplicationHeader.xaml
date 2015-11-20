@@ -1,0 +1,32 @@
+﻿<UserControl
+    x:Class="MCGIApp.View.CustomControl.ApplicationHeader"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="130"
+    d:DesignWidth="400">
+
+    <!-- User Control Styles -->
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="BorderTopBrush" Color="#2F96B4" />
+                    <SolidColorBrush x:Key="BorderBottomBrush" Color="#E0E0E0" />
+                    <ImageBrush x:Key="PageHeaderBrush" ImageSource="Assets/Icons/logo-header.png" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    
+    <!-- Header control -->
+    <Border BorderThickness="0, 10, 0, 0" BorderBrush="{ThemeResource BorderTopBrush}">
+        <Border BorderThickness="0, 0, 0, 2" BorderBrush="{ThemeResource BorderBottomBrush}" Margin="0, 0, 0, 28">
+            <Image Source="../../Assets/Icons/logo-header.png" Stretch="None" HorizontalAlignment="Left" />
+        </Border>
+    </Border>
+</UserControl>

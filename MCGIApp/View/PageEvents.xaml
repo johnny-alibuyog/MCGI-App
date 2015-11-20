@@ -1,0 +1,157 @@
+﻿<Page
+    x:Class="MCGIApp.PageEvents"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Events" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+
+            <HubSection Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">BIBLE EXPOSITION</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The ADD Convention Center</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Propagating truths in the Bible and exposing frauds in the religious world before live crowds, MCGI's Bible Exposition has accommodated countless people and entertained queries of faith and spirituality with the question-and-answer program of Bro. Eli since 1993.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Like all other Church services, the Bible Exposition is free. All are welcome to attend and ask Bro. Eli Soriano any question they may have of the Bible and its Author. And for their indulgence to MCGI's invitation, guests are even served food and drinks.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Marathon Bible Exposition</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            "East meets West" gets redefined once more with this Bible Exposition that lasts up to ten or twelve hours. The Marathon Bible Exposition aims to entertain questions coming from the East during night time, and those from the Western hemisphere during day time.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">MUSIC MINISTRY EVENTS</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">ASOP</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Short for A Song of Praise Music Festival, ASOP is a songwriting event of the Church dedicated to songs of praise to God. MCGI Leaders launched the songwriting festival as a yearly event in 2004. ASOP turned bi-annual in 2009, giving way to the Mid-Year and Year-End Finals.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Though joining or even watching ASOP requires no fee, MCGI leaders have given more than millions of pesos in prizes just to hear the best songs of praise that can be crafted by the hearts and minds of men.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Annually, the Music Ministry holds summits for choirs and theater groups in the Church. Comprised of seminars for craft-improvement, a presentation of song-and-dance numbers, and consultations with Bro. Eli and Bro. Daniel, the summits foster spiritual growth and stability among its members with God's help.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">International Music Summit</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            With a songwriting festival based on a different theme each year, Division Choirs Church-wide present their new composition piece on stage at the ADD Convention Center in Apalit, Pampanga. The year's worth of preparation include refining the song entry and accompanying the presentation with choreography and props.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The youth choirs lead the congregational singing and perform opening and intermission numbers during Bible Expositions and Thanksgivings or in special events within their respective Church regions.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">International Theater Summit</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            To add color to the stage during an event, MCGI's Teatro Kristiano group dances to the beat of heavenly tunes produced by the choir and the ADD Strings, the Church's orchestra.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Yearly, they gather at the Convention Center to showcase their dancing and acting skills. Teatro Kristiano groups from different Divisions do their best in interpreting a Church song, aiming to tell the story behind it as visually-pleasing as possible.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">National Locale Choir Music Summit</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            While youths participate in the yearly Music and Theater Summits, it is the married couples in the Church who compose the participants of the National Locale Choir Music Summit.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Locale Choir representatives from different Church regions give their best in rendering new compositions based on a theme and songs from the hymn book. Locale Choirs are the groups that lead the congregational singing during Church services in the Locales.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionThree">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">OTHER EVENTS</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Mass Indoctrination</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            A simultaneous series of indoctrination sessions across the Philippines and abroad where Bro. Eli teaches the undefiled doctrines of the Lord Jesus Christ. Visitors gathered at MCGI Coordinating Centers learn a doctrine a day through a pre-recorded Mass Indoctrination. The indoctrination session is a required process before a person is permitted to receive baptism.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Mass Baptism</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            For attendees of the Mass Indoctrination series who wish to be members of the Church of God International, this is where their indoctrination ends and their new life as Christians begin.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Candidates for baptism coming from Metro Manila and nearby provinces flock to the ADD Convention Center in Apalit, Pampanga to hear the doctrine for baptism and, should they decide, be baptized. Those from Visayas, Mindanao and outside the country go to other dedicated venues for the service.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Couples International Convention</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            An annual service where couples in the Church attend a mass wedding to hear God's doctrines on marriage, as well as consult their marital and spiritual problems with MCGI Leaders.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The mass wedding and all other Church rites are administered for free, according to the Lord's commandment in Matthew 10:8.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Christian New Year</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            MCGI follows the New Year of the Hebrew calendar, the first of Abib or Nisan, which falls around April. Unlike the usual New Year celebration, members conduct a Thanksgiving service where they offer songs and prayers to the Almighty Father for another year He has given.
+                            </TextBlock>
+
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">The Lord's Supper</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Church commemorates the sacrifice of the Lord Jesus Christ to cleanse the sins of men every Nisan 13. Before sunset, which is the start of a biblical day, members gather to sing praises, pray, and study a topic related to the celebration. Though MCGI leaders prepare a common meal for the attendees, congregants know that the true food and drink for the evening are the spiritual bread and wine taught in the Bible.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

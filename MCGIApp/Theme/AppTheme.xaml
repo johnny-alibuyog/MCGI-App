@@ -1,0 +1,33 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp.Theme">
+
+
+
+    <SolidColorBrush x:Key="ApplicationForegroundColor" Color="#222222" />
+    <SolidColorBrush x:Key="ApplicationSubtitleForegroundColor" Color="#777777" />
+    <SolidColorBrush x:Name="ApplicationBackgroundColor" Color="White" />
+    <SolidColorBrush x:Name="HeaderForegroundColor" Color="#1ba1e2" />
+
+    <SolidColorBrush x:Name="ListItemBorderLeftColor" Color="#2F96B4" />
+
+    <Style TargetType="TextBlock" x:Key="ItemPageHeaderTitle">
+        <Setter Property="FontSize" Value="23" />
+        <Setter Property="Margin" Value="0,0,0,17" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="ItemPageSubHeaderTitle">
+        <Setter Property="FontSize" Value="21" />
+        <Setter Property="Margin" Value="0,10,0,10" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="ItemPageContent">
+        <Setter Property="FontSize" Value="17" />
+        <Setter Property="Margin" Value="0,0,0,15" />
+        <Setter Property="TextWrapping" Value="WrapWholeWords" />
+    </Style>
+
+</ResourceDictionary>

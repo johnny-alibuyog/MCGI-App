@@ -1,0 +1,204 @@
+﻿<Page
+    x:Class="MCGIApp.PageCharities"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCGIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="using:MCGIApp.View.CustomControl"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationBackgroundColor}" Margin="0">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <custom:ApplicationHeader />
+            <TextBlock FontSize="28" Foreground="{ThemeResource ApplicationForegroundColor}"
+                       Margin="20,-10,0,0" Text="Charities" />
+        </StackPanel>
+
+        <Hub Grid.Row="1" x:Name="Hub" x:Uid="Hub" Foreground="{ThemeResource ApplicationForegroundColor}">
+
+            <HubSection Name="ItemPageSectionOne">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Reaching out to people and providing assistance to those who are in need is part of the Members Church of God International (MCGI)'s mission alongside worldwide evangelization. Numerous charity and outreach programs were established and more are continuously being mounted to carry out this responsibility and fulfill Galatians 6:10 (As we have therefore opportunity, let us do good unto all men, especially unto them who are of the household of faith).
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Through the Ang Dating Daan Foundation International or ADD Foundation, MCGI is able to provide various forms of support to orphans, senior citizens, abandoned babies, and less-fortunate people, regardless of their religious affiliation. The scope of the assistance comprises daily essentials like food, clothing, basic hygiene needs, and medicines.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Giving of medical, dental, legal, and caregiving services and provisions are also part of the Church's charitable commitment to society. Likewise, MCGI maintains several residential institutions including orphanages that house hundreds of orphans and senior citizens, and a transient home for a night or day of rest with free food.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The charity works of the Church spread to the education sector. MCGI established the La Verdad Christian College in Caloocan City and La Verdad Christian School in Apalit, Pampanga to offer scholarship to poor yet deserving students. Aside from giving free access to college education, free meals, free uniforms, and free books, among other benefits are given to students. iOther assistance given include livelihood programs and financial aid.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionTwo">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">TEACHING</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Free Education</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            From the Philippines to Africa, MCGI supports La Verdad Christian College scholars from primary to tertiary levels. Aside from free tuition fee, a scholar enjoys free meals, free books, free school supplies, and free uniforms. The aim of this scholarship grant is to provide free education to deserving students who cannot support their schooling.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Mobile School</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Church-sponsored mobile school program was launched in 2010 to reach remote locations where educational systems are insufficient, and school accessibility is a problem. This initiative is the result of another partnership with UNTV and the Department of Education of the Philippines.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Know more about the history of Dunong Gulong or Wisdom on Wheels here.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Mobile Coordinating Center</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            With the intent for all to hear God's lessons and doctrines in the Bible, MCGI launched its Mobile Coordinating Center on November 4, 2012. Equipped with its own satellite dish for receiving live Bible Exposition feeds, the bus transforms into a cozy venue complete with a roof, chairs and a television screen.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            A brainchild of Bro. Daniel, the mobile center also comes with its own kitchen for preparing food for attendees of Church services in remote areas.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionThree">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">HEALING</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Nationwide Clinics</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Daily medical and dental services are provided to members and non-members alike in partnership with UNTV's Clinic ni Kuya (Big Brother's Clinic) and Botika ni Kuya (Big Brother's Pharmacy) that cover a nationwide scope in the Philippines.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Church-sponsored mobile school program was launched in 2010 to reach remote locations where educational systems are insufficient, and school accessibility is a problem. This initiative is the result of another partnership with UNTV and the Department of Education of the Philippines.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            MCGI members also hand out free medicines, prescription eyeglasses, and dentures. Ambulance service is also free should a doctor recommend a patient for immediate admission to a hospital or for other emergency cases where it is needed.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Medical Missions</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            For far-flung or remote provinces that lack medical and dental services, the ADD Foundation schedules medical missions for free via its Mobile Health Clinics.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Equipped with medical instruments and even an X-ray machine, the Mobile Clinics travel hundreds of miles to reach towns and municipalities where medical aid is much needed.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Visit the Kuya Daniel Razon website for more information www.danielrazon.com/works/public-service/medical-mission
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionFour">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">NURTURING</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Transient Home</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Inspired by the film Pursuit of Happyness, MCGI Leaders put up a Transient Home along EDSA in the Philippines to accommodate anyone needing a temporary place to stay for the night or day.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            The Home provides a bed with beddings, food, and clothing for free during a person's stay. Near the Clinic ni Kuya of UNTV, the Home is ready to take in the latter's patients coming from provinces or far places.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            MCGI Leaders also put up a Transient Home in the ADD Convention Center in Apalit, Pampanga where it mainly takes in Church members who attend its weekly Thanksgiving.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            See the Kuya Daniel Razon's advocacy and history www.danielrazon.com/works/public-service/transient-home
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Centers for Youth and the Elderly</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            For far-flung or remote provinces that lack medical and dental services, the ADD Foundation schedules medical missions for free via its Mobile Health Clinics.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Infant Care Center</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            News of abandoned babies have proliferated over the years, and the project was initiated to provide care to infants whose parents may have deliberately turned away from their parental responsibilities due to financial, physical or psychological incapacities.
+                            </TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Launched on the 32nd anniversary celebration of Ang Dating Daan on November 4, 2012, the first center is located at the ADD Convention Center, Pampanga, Philippines.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionFive">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">ASSISTING</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Law Center</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            At UNTV's Law Center ni Kuya, MCGI members who are practicing attorneys offer their services to anyone needing help with legal matters. The Law Center also offers its services to remote places with Justice on Wheels, a program that aims to take the attorneys closer to indigents' reach.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Livelihood Program</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Munting Pangarap (Small Wish) is a gift-giving project by MCGI leaders to poor members who have small dreams and wishes. Members write a letter to Bro. Eli and Bro. Daniel, usually requesting capital for a small business. The MCGI leaders then grant members' requests for livelihood aid in cash and/or kind.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Name="ItemPageSectionSix">
+                <DataTemplate>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel>
+                            <TextBlock Style="{ThemeResource ItemPageHeaderTitle}">OTHERS</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Mass Blood Donation</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Long before MCGI doubled its blood donation record of 5,139 units in 2010, members have been participating in the noble cause of saving lives since the 90s. The Church conducts quarterly mass blood drives and small-scale bloodletting initiatives each year in partnership with the Philippine Red Cross and the Philippine Blood Center.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Free Transportation (Libreng Sakay)</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            Free rides from jeepney, bus, and train, to state a few, are provided to commuters. Launched initially for Metro Manila passengers through UNTV, other provinces have already enjoyed the free fare from MCGI-sponsored public transportations.
+                            </TextBlock>
+
+                            <TextBlock Style="{ThemeResource ItemPageSubHeaderTitle}">Tree Planting</TextBlock>
+                            <TextBlock Style="{ThemeResource ItemPageContent}">
+                            In response to global warming and to show environmental solicitude and responsibility, members volunteer to plant seedlings to different locations all over the Philippines. Planters and volunteers tend to these seedlings and monitor their growth.
+                            </TextBlock>
+                        </StackPanel>
+                    </ScrollViewer>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

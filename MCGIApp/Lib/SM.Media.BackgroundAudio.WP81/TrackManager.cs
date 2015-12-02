@@ -35,7 +35,7 @@ namespace SM.Media.BackgroundAudio
 {
     static class TrackManager
     {
-        static MediaTrack[] Sources =
+        public static MediaTrack[] Sources =
         {
             //new MediaTrack {
             //    Title = "ABC",
@@ -67,13 +67,19 @@ namespace SM.Media.BackgroundAudio
 
         public static IList<MediaTrack> Tracks
         {
-            get {
+            get
+            {
                 return Sources;
             }
         }
 
         public static async void GetTracks()
         {
+            if (Sources.Length > 0)
+            {
+                return;
+            }
+
             MediaTrack md = await GetLink();
             MediaTrack[] sources = {
                 new MediaTrack() {
@@ -85,8 +91,41 @@ namespace SM.Media.BackgroundAudio
             Sources = sources;
         }
 
+        public static async Task<IList<MediaTrack>> GetTrackList()
+        {
+            MediaTrack myLinks = null;
 
+            // Retrieve Links' details
+            try
+            {
+                var client = new HttpClient();
+                var response = await client.GetAsync(CP_AUDIO);
+                response.EnsureSuccessStatusCode();
 
+                var jsonResult = await response.Content.ReadAsStringAsync();
+
+                var cp = JsonConvert.DeserializeObject<CommunityPrayerModel>(jsonResult);
+
+                myLinks = new MediaTrack()
+                {
+                    Title = "MCGI - COMMUNITY PRAYER",
+                    Url = new Uri(cp.Post.URL)
+                };
+            }
+            catch (Exception)
+            {
+
+            }
+
+            MediaTrack[] myList = 
+            {
+                myLinks
+            };
+
+            return myList;
+        }
+
+        
         private const string CP_AUDIO = "http://www.mcgi.org/api/get_post/?callback=?&post_type=Streaming&post_id=2453&dev=1";
 
         /// <summary>

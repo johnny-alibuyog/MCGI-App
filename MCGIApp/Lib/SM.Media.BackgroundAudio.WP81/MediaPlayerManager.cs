@@ -59,9 +59,8 @@ namespace SM.Media.BackgroundAudio
         readonly MediaManagerParameters _mediaManagerParameters;
         readonly MediaPlayer _mediaPlayer;
         readonly MetadataHandler _metadataHandler;
-        //readonly IList<MediaTrack> _tracks = TrackManager.Tracks;
+
         IList<MediaTrack> _tracks = TrackManager.Tracks;
-        //readonly IList<MediaTrack> _tracks;
         TaskCompletionSource<object> _closePlaybackCompleted;
         IMediaStreamFacade _mediaStreamFacade;
         TimeSpan? _position;
@@ -70,7 +69,6 @@ namespace SM.Media.BackgroundAudio
 
         public MediaPlayerManager(MediaPlayer mediaPlayer, MetadataHandler metadataHandler, CancellationToken cancellationToken)
         {
-            TrackManager.GetTracks();
             if (null == mediaPlayer)
                 throw new ArgumentNullException("mediaPlayer");
             if (null == metadataHandler)
@@ -425,14 +423,13 @@ namespace SM.Media.BackgroundAudio
             Play();
         }
 
-        public void Play()
+        public async void Play()
         {
-            if (_tracks.Count == 0)
-            {
-                _tracks = TrackManager.Tracks;
-            }
+            Task<IList<MediaTrack>> myList = TrackManager.GetTrackList();
 
             Debug.WriteLine("MediaPlayerManager.Play()");
+
+            _tracks = await myList;
 
             var track = _trackIndex;
 

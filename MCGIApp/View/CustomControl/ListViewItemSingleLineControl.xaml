@@ -24,10 +24,10 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Border Margin="0,0,0,9" Grid.Column="0" HorizontalAlignment="Left">
+                    <Border Margin="0,0,0,6" Grid.Column="0" HorizontalAlignment="Left">
                         <Image Source="{Binding ImagePath}" Stretch="Uniform" AutomationProperties.Name="{Binding Title}" Height="65" Width="79" />
                     </Border>
-                    <StackPanel Grid.Column="1" Margin="14.5,10,0,0">
+                    <StackPanel Grid.Column="1" Margin="14.5,7,0,0">
                         <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}" Foreground="{ThemeResource ForegroundColor}"/>
                     </StackPanel>
                 </Grid>

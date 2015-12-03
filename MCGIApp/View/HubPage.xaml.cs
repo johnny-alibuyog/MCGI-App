@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.Resources;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -196,10 +197,34 @@ namespace MCGIApp
         /// </summary>
         private async void GetCpLinks()
         {
+            //Service service = new Service();
+
+            //Post videoLinks = await service.GetVideoLink();
+            //Post audioLinks = await service.GetAudioLink();
+
+            //_cpModel.Add(videoLinks);
+            //_cpModel.Add(audioLinks);
+
+            //defaultViewModel["CPLinks"] = _cpModel;
+
+            
             Service service = new Service();
 
-            _cpModel.Add(await service.GetVideoLink());
-            _cpModel.Add(await service.GetAudioLink());
+            Task<Post> videoLinkTask = service.GetVideoLink();
+            Task<Post> audioLinkTask = service.GetAudioLink();
+            
+            Post videoLinks = await videoLinkTask;
+            Post audioLinks = await audioLinkTask;
+
+            if (videoLinks != null)
+            {
+                _cpModel.Add(videoLinks);
+            }
+
+            if (audioLinks != null)
+            {
+                _cpModel.Add(audioLinks);
+            }
 
             defaultViewModel["CPLinks"] = _cpModel;
         }

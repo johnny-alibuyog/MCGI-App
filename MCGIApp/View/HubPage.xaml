@@ -75,18 +75,17 @@
                 <DataTemplate>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="140" />
-                            <RowDefinition Height="35" />
-                            <RowDefinition Height="120" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                             <RowDefinition Height="150" />
                         </Grid.RowDefinitions>
 
-                        <TextBlock TextWrapping="Wrap" FontSize="17">Explore a different avenue of spiritual learning and gain invaluable insights as you browse through the pages of this unique online source. May you find sensible pleasure as you explore this Mobile App.</TextBlock>
-                        <TextBlock Grid.Row="1" FontSize="23">24/7 Community Prayer</TextBlock>
-                        <TextBlock Grid.Row="2" TextWrapping="Wrap" FontSize="17">"Pray without ceasing," says I Thessalonians 5:17. Thus, comes this nonstop prayer service made available online primarily for MCGI brethren in countries across the globe.</TextBlock>
+                        <TextBlock TextWrapping="Wrap" FontSize="20">Explore a different avenue of spiritual learning and gain invaluable insights as you browse through the pages of this unique online source. May you find sensible pleasure as you explore this Mobile App.</TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="27" Margin="0,25,0,7">24/7 Community Prayer</TextBlock>
+                        <TextBlock Grid.Row="2" TextWrapping="Wrap" FontSize="20">"Pray without ceasing," says I Thessalonians 5:17. Thus, comes this nonstop prayer service made available online primarily for MCGI brethren in countries across the globe.</TextBlock>
                         
-                        <customControl:ListViewItemSingleLineControl Grid.Row="3" Click="CommunityPrayer_ItemClick" />
-                        
+                        <customControl:ListViewItemSingleLineControl Grid.Row="3" Margin="0,15,0,0" Click="CommunityPrayer_ItemClick" />                        
                     </Grid>
 
                 </DataTemplate>
@@ -156,38 +155,38 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                                                
+
 
                         <TextBlock Grid.ColumnSpan="2" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,20">
                             Philippine Central Office
                         </TextBlock>
 
-                        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5">
+                        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5">
                             Telephone
                         </TextBlock>
-                        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5">
+                        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5">
                             +63.45.8790522
                         </TextBlock>
 
-                        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5">
+                        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5">
                             Address
                         </TextBlock>
-                        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="{ThemeResource TextStyleMediumFontSize}" 
+                        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="{ThemeResource TextStyleLargeFontSize}" 
                                    Margin="0,0,0,5" TextWrapping="Wrap"
                                    LineHeight="23">
                             ADD Convention Center, Brgy. Sampaloc, Apalit 2016, Pampanga, Philippines
                         </TextBlock>
 
-                        <TextBlock Grid.Column="0" Grid.Row="3" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5">
+                        <TextBlock Grid.Column="0" Grid.Row="3" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5">
                             Email
                         </TextBlock>
-                        <TextBlock Grid.Column="1" Grid.Row="3" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5" TextWrapping="Wrap">
+                        <TextBlock Grid.Column="1" Grid.Row="3" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5" TextWrapping="Wrap">
                             info@mcgi.org
                         </TextBlock>
-                        <TextBlock Grid.Column="1" Grid.Row="4" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5" TextWrapping="Wrap">
+                        <TextBlock Grid.Column="1" Grid.Row="4" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5" TextWrapping="Wrap">
                             ask@mcgi.org
                         </TextBlock>
-                        <TextBlock Grid.Column="1" Grid.Row="5" FontSize="{ThemeResource TextStyleMediumFontSize}" Margin="0,0,0,5" TextWrapping="Wrap">
+                        <TextBlock Grid.Column="1" Grid.Row="5" FontSize="{ThemeResource TextStyleLargeFontSize}" Margin="0,0,0,5" TextWrapping="Wrap">
                             addcentral@yahoo.com
                         </TextBlock>
                     </Grid>

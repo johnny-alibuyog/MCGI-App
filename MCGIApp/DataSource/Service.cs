@@ -50,8 +50,13 @@ namespace MCGIApp.DataSource
                 return _videoLink.Post;
             }
             _videoLink = await this.GetLink(CP_VIDEO);
-            _videoLink.Post.Title = "Video";
-            _videoLink.Post.ImagePath = "/Assets/Icons/icon-video.png";
+
+            if (_videoLink.Post != null)
+            {
+                _videoLink.Post.Title = "Video";
+                _videoLink.Post.ImagePath = "/Assets/Icons/icon-video.png";
+            }
+
             return _videoLink.Post;
         }
 
@@ -62,8 +67,13 @@ namespace MCGIApp.DataSource
                 return _audioLink.Post;
             }
             _audioLink = await this.GetLink(CP_AUDIO);
-            _audioLink.Post.Title = "Audio";
-            _audioLink.Post.ImagePath = "/Assets/Icons/icon-audio.png";
+
+            if (_audioLink.Post != null)
+            {
+                _audioLink.Post.Title = "Audio";
+                _audioLink.Post.ImagePath = "/Assets/Icons/icon-audio.png";
+            }
+
             return _audioLink.Post;
         }
     }

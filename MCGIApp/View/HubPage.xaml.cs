@@ -86,7 +86,7 @@ namespace MCGIApp
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
             var sampleDataGroups = await StaticDataSource.GetGroupsAsync();
             this.DefaultViewModel["Groups"] = sampleDataGroups;
-            Hub.ScrollToSection(WelcomeSection);
+            //Hub.ScrollToSection(WelcomeSection);
 
             this.GetCpLinks();
         }
@@ -176,19 +176,9 @@ namespace MCGIApp
                 }
             };
 
-            if (cpItem.Title == "Video")
+            if (!Frame.Navigate(typeof(HslPlayerPage), cpModel))
             {
-                if (!Frame.Navigate(typeof(HslPlayerPage), cpModel))
-                {
-                    throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
-                }
-            }
-            else
-            {
-                if (!Frame.Navigate(typeof(BackgroundAudioPage), cpModel))
-                {
-                    throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
-                }
+                throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
             }
         }
 
@@ -196,18 +186,7 @@ namespace MCGIApp
         /// Retrieves the Community Prayer Links
         /// </summary>
         private async void GetCpLinks()
-        {
-            //Service service = new Service();
-
-            //Post videoLinks = await service.GetVideoLink();
-            //Post audioLinks = await service.GetAudioLink();
-
-            //_cpModel.Add(videoLinks);
-            //_cpModel.Add(audioLinks);
-
-            //defaultViewModel["CPLinks"] = _cpModel;
-
-            
+        {            
             Service service = new Service();
 
             Task<Post> videoLinkTask = service.GetVideoLink();

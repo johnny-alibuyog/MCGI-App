@@ -1,5 +1,4 @@
 ﻿using MCGIApp.Common;
-using SM.Media.BackgroundAudio;
 using System;
 using System.Collections.Generic;
 using System.IO;

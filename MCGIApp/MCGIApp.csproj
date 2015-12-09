@@ -84,17 +84,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BackgroundAudio\BackgroundMediaNotifier.cs" />
-    <Compile Include="BackgroundAudio\BackgroundNotificationType.cs" />
-    <Compile Include="BackgroundAudio\BackgroundNotifier.cs" />
-    <Compile Include="BackgroundAudio\BackgroundSettings.cs" />
-    <Compile Include="BackgroundAudio\BackgroundSubscriptionHandle.cs" />
-    <Compile Include="BackgroundAudio\MediaPlayerHandle.cs" />
-    <Compile Include="BackgroundAudio\MediaPlayerSession.cs" />
-    <Compile Include="BackgroundAudio\ValueSetWorkerQueue.cs" />
-    <Compile Include="View\BackgroundAudioPage.xaml.cs">
-      <DependentUpon>BackgroundAudioPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\PageCharities.xaml.cs">
       <DependentUpon>PageCharities.xaml</DependentUpon>
     </Compile>
@@ -220,10 +209,6 @@
     <PRIResource Include="Strings\en-US\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="View\BackgroundAudioPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\PageCharities.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -326,12 +311,6 @@
     <SDKReference Include="Microsoft.PlayerFramework.Xaml, Version=2.0.0.0">
       <Name>Microsoft Player Framework</Name>
     </SDKReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Lib\SM.Media.BackgroundAudio.WP81\SM.Media.BackgroundAudio.WP81.csproj">
-      <Project>{45d9419a-d717-47e5-a095-c50ff477b302}</Project>
-      <Name>SM.Media.BackgroundAudio.WP81</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

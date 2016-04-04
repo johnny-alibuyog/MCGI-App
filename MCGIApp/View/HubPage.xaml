@@ -73,21 +73,23 @@
             <HubSection x:Uid="WelcomeSection" Name="WelcomeSection" Header="Welcome!"
                         DataContext="{Binding CPLinks}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="150" />
-                        </Grid.RowDefinitions>
 
-                        <TextBlock TextWrapping="Wrap" FontSize="20">Explore a different avenue of spiritual learning and gain invaluable insights as you browse through the pages of this unique online source. May you find sensible pleasure as you explore this Mobile App.</TextBlock>
-                        <TextBlock Grid.Row="1" FontSize="27" Margin="0,20,0,7">24/7 Community Prayer</TextBlock>
-                        <TextBlock Grid.Row="2" TextWrapping="Wrap" FontSize="20">"Pray without ceasing," says I Thessalonians 5:17. Thus, comes this nonstop prayer service made available online primarily for MCGI brethren in countries across the globe.</TextBlock>
-                        
-                        <customControl:ListViewItemSingleLineControl Grid.Row="3" Margin="0,10,0,0" Click="CommunityPrayer_ItemClick" />                        
-                    </Grid>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
 
+                            <TextBlock TextWrapping="Wrap" FontSize="20">Explore a different avenue of spiritual learning and gain invaluable insights as you browse through the pages of this unique online source. May you find sensible pleasure as you explore this Mobile App.</TextBlock>
+                            <TextBlock Grid.Row="1" FontSize="27" Margin="0,20,0,7">24/7 Community Prayer</TextBlock>
+                            <TextBlock Grid.Row="2" TextWrapping="Wrap" FontSize="20">"Pray without ceasing," says I Thessalonians 5:17. Thus, comes this nonstop prayer service made available online primarily for MCGI brethren in countries across the globe.</TextBlock>
+
+                            <customControl:ListViewItemSingleLineControl Grid.Row="3" Margin="0,10,0,0" Click="CommunityPrayer_ItemClick" />
+                        </Grid>
+                    </ScrollViewer>
                 </DataTemplate>
             </HubSection>
             

@@ -194,11 +194,20 @@
     <Content Include="Assets\WideLogo.scale-140.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Common\ReadMe.txt" />
+    <Content Include="ETC\bg-edited.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Lib\Microsoft.PlayerFramework.dll" />
     <Content Include="Lib\SM.Media.Builder.dll" />
     <Content Include="Lib\SM.Media.dll" />
     <Content Include="Lib\SM.Media.MediaPlayer.WP81.dll" />
     <Content Include="Lib\SM.Media.Platform.WinRT.dll" />
+    <None Include="ETC\MCGI App.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ETC\Mobile App - JSON.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>

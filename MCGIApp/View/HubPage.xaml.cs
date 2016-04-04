@@ -186,7 +186,11 @@ namespace MCGIApp
         /// Retrieves the Community Prayer Links
         /// </summary>
         private async void GetCpLinks()
-        {            
+        {
+            if (_cpModel.Count > 0)
+            {
+                return;
+            }
             Service service = new Service();
 
             Task<Post> videoLinkTask = service.GetVideoLink();
